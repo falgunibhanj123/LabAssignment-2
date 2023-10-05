@@ -12,11 +12,13 @@ public class Main {
 		int size = sc.nextInt();
 		int[] transactions = new int[size];
 		System.out.println("Enter the values of the transactions");
+		
 		for (int i=0; i<size; i++) {
 			transactions[i] = sc.nextInt();
 		}
 		
 		System.out.println("Enter the number of targets needs to be achieved");
+		
 		int targetSize = sc.nextInt();
 		for (int i=0; i<targetSize; i++) {
 			System.out.println("Enter the value of the target");
