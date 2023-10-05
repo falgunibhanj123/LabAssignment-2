@@ -7,7 +7,7 @@ public class Currency {
 		int[] countDenominations = new int[denominations.length];
 		
 		for(int i=0;i<denominations.length;i++) {
-			if (payValue >= denominations[i]) {
+		    if (payValue >= denominations[i]) {
 				
 			int countCurr = payValue/denominations[i];
 			payValue = payValue-(denominations[i]*countCurr);
@@ -16,7 +16,7 @@ public class Currency {
 			if (payValue == 0) {
 				break;
 			}
-			}
+		     }
 		}
 		if(payValue == 0) {
 			System.out.println("Your payment approach in order to give minimum number of notes will be :");
@@ -26,7 +26,7 @@ public class Currency {
 				}
 			}
 		}else {
-			System.out.println("Exact pay value cannot be paid with highest possible denominations");
+		    System.out.println("Exact pay value cannot be paid with highest possible denominations");
 		}
 	}
 }
